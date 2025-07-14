@@ -1,0 +1,169 @@
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --accent: #ff3f81;
+}
+
+body.light-mode {
+  --bg-color: #f9f9f9;
+  --text-color: #111;
+  --accent: #d9005d;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #111;
+  padding: 20px 0;
+}
+
+h1 {
+  color: var(--accent);
+  margin: 30px 0 10px;
+}
+
+h2 {
+  color: #ff79aa;
+  margin-bottom: 20px;
+}
+
+.nav {
+  margin: 10px 0;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--text-color);
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+body.light-mode .nav-button:hover {
+  color: #fff;
+}
+
+.section {
+  margin: 30px auto;
+  max-width: 600px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+body.light-mode .section {
+  background-color: #f0f0f0;
+  color: #111;
+}
+
+.message {
+  background-color: #333;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+body.light-mode .message {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.message p {
+  margin: 0 0 8px 0;
+}
+
+.message small {
+  display: block;
+  color: #bbb;
+  font-size: 0.85em;
+}
+
+/* === UNIFIED MESSAGE BUTTON STYLE === */
+.message button {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--text-color);
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.message button:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+body.light-mode .message button:hover {
+  color: #fff;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+.button {
+  background-color: var(--bg-color);
+  border: 1px solid var(--accent);
+  color: var(--text-color);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+body.light-mode .button:hover {
+  color: #fff;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: var(--bg-color);
+  padding: 20px;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 600px) {
+  .info-section {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .info-section h2 {
+    font-size: 1.4em;
+  }
+
+  .info-section p,
+  .info-section ul {
+    font-size: 1em;
+  }
+}
