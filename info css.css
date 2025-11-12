@@ -1,0 +1,138 @@
+/* === THEME COLORS === */
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --accent: #ff3f81;
+}
+
+body.light-mode {
+  --bg-color: #f9f9f9;
+  --text-color: #111;
+  --accent: #d9005d;
+}
+
+/* === GENERAL PAGE STYLES === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* === HEADER === */
+header {
+  background-color: var(--bg-color);
+  padding: 20px 0;
+}
+
+h1 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.nav {
+  margin: 10px 0;
+}
+
+.nav-button {
+  background-color: var(--bg-color);
+  border: 1px solid var(--accent);
+  color: var(--text-color);
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.nav-button:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+/* === INFO PAGE SECTION === */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: left;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000055;
+}
+
+.info-section h2 {
+  color: var(--accent);
+  margin-top: 30px;
+  font-size: 1.8em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.info-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 15px 0;
+}
+
+.info-section ul {
+  margin-left: 20px;
+  padding-left: 20px;
+  color: var(--text-color);
+}
+
+.info-section ul li {
+  margin: 10px 0;
+  list-style-type: circle;
+}
+
+/* === BUTTON (used for toggle or others) === */
+.button {
+  background-color: var(--bg-color);
+  border: 1px solid var(--accent);
+  color: var(--text-color);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+body.light-mode .button:hover {
+  color: #fff;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: var(--bg-color);
+  padding: 20px;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 600px) {
+  .info-section {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .info-section h2 {
+    font-size: 1.4em;
+  }
+
+  .info-section p,
+  .info-section ul {
+    font-size: 1em;
+  }
+}
